@@ -31,27 +31,28 @@
           Leave your information and we'll call you back
         </h3>
         <form class="form-style">
-          <label class="">Name
-            <input type="text" name="name">
-            <svg><use href="images/form-icons.svg#icon-person"></use></svg>
+          <label class="label-style">Name
+            <input class="form-text" type="text" name="name">
+            <svg class="form-icon"><use href="images/form-icons.svg#icon-person"></use></svg>
           </label>
-          <label>Telephone
-            <input type="tel" name="phone">
-            <svg><use href="images/form-icons.svg#icon-phone"></use></svg>
+          <label class="label-style">Telephone
+            <input  class="form-text"type="tel" name="phone">
+            <svg class="form-icon"><use href="images/form-icons.svg#icon-phone"></use></svg>
           </label>
-          <label>E-mail
-            <input type="text" name="e-mail">
-            <svg><use href="images/form-icons.svg#icon-email"></use>
+          <label class="label-style">E-mail
+            <input class="form-text" type="email" name="e-mail">
+            <svg class="form-icon"><use href="images/form-icons.svg#icon-email"></use>
             </svg>
           </label>
-          <label> Comments
-            <textarea name="comments"></textarea>
+          <label class="label-style"> Comments
+            <textarea class="form-textarea" name="comments" placeholder="Enter the text"></textarea>
           </label>
-          <label>I agree with the letter and accept the Terms and Conditions
-            <input type="checkbox" name="agreement" checked>
-          </label>
-          <button type="submit">Send</button>
         </form>
+        <label class="form-agreement"> <input  type="checkbox" name="agreement" checked>
+          <span class=""></span>I agree with the letter and accept the <a  href="#" class="form-link">Terms and Conditions</a>
+          
+        </label>
+        <button class="form-button" type="submit">Send</button>
       </div>
     </div>
     <div class="container">
@@ -424,6 +425,15 @@
                 ></a>
               </li>
             </ul>
+         </div>
+         <div class="subscribe">
+          <h4 class="social-title">
+           SUBSCRIBE TO THE NEWSLETTTER
+          </h4>
+          <input class="e-mail-section"type="email" name="e-mail" placeholder="E-mail">
+          <button class=" form-button" type="submit"> Subscribe
+          <svg class="e-mail-icon"><use href="images/form-icons.svg#icon-send">
+          </use></svg></button>
          </div>
         </address>
        </div>

@@ -120,16 +120,16 @@ body {
   position: relative;
 }
 .close-modal {
-  padding:0;
+  padding: 0;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
   font-size: 16px;
   line-height: 30px;
-display:flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -617,6 +617,7 @@ align-items: center;
   font-size: 14px;
   line-height: 16.41px;
   margin-bottom: 20px;
+  border: 2px solid green;
 }
 .footer {
   background-color: var(--bg-color);
@@ -683,15 +684,82 @@ align-items: center;
   border: 1px solid var(--brand-color);
   border-radius: 4px;
 }
-.form-style{
-  display:flex;
+.form-style {
+  display: flex;
 }
 .form-title {
-  width:448px;
-  height:23px;
-font-weight: 700px;
-font-size: 20px
-line-height:1.17;
-text-align :center;
-border:1px solid red;
+  width: 448px;
+  height: 23px;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 41px;
+}
+.form-style {
+  width: 448px;
+  height: 342px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.form-icon {
+  width: 18px;
+  height: 18px;
+}
+.label-style {
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 1.17;
+  color: var(--paragraph-color);
+}
+.form-link {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--brand-color);
+}
+.form-agreement {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--paragraph-color);
+}
+.form-button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 1.875;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin-left: 12px;
+}
+.subscribe {
+  padding-top: 82px;
+  margin-left: 93px;
+}
+.e-mail-icon {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  bottom: 13px;
+}
+.e-mail-section {
+  height: 50px;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--paragraph-color);
+  background-color: var(--bg-color);
+  border-color: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
