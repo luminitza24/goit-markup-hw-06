@@ -136,6 +136,9 @@ body {
   cursor: pointer;
   background-color: var(--white-color);
 }
+.close-modal:hover {
+  border-color: var(--brand-color);
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
