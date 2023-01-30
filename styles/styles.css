@@ -616,8 +616,8 @@ body {
   font-weight: 700px;
   font-size: 14px;
   line-height: 16.41px;
+  text-transform: uppercase;
   margin-bottom: 20px;
-  border: 2px solid green;
 }
 .footer {
   background-color: var(--bg-color);
@@ -708,7 +708,10 @@ body {
   left: 13.5px;
   color: var(--writing-color);
 }
-.form-icon .contact-form label {
+.form-icon:hover {
+  fill: var(--brand-color);
+}
+.contact-form label {
   flex: 1 0 100%;
   font-size: 12px;
   font-weight: 400px;
@@ -725,7 +728,22 @@ body {
   height: 40px;
   border: 1px solid var(--paragraph-color);
   margin-top: 4px;
+  padding-left: 40px;
 }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  color: var(--brand-color);
+  outline: none;
+  background-color: var(--white-color);
+  border: 1px solid var(--brand-color);
+  box-shadow: 0 2 1 0 rgba(0, 0, 0, 0.2), 0 1 1 0 rgba(0, 0, 0, 0.14),
+    0 1 3 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.contact-form textarea:focus ::placeholder {
+  color: var(--brand-color);
+}
+
 .contact-form textarea {
   width: 448px;
   height: 120px;
@@ -736,14 +754,19 @@ body {
   padding: 12px 16px;
 }
 .form-link {
+  color: var(--brand-color);
   font-size: 14px;
   line-height: 1.71;
-  color: var(--brand-color);
+  padding: 0;
 }
 .form-agreement {
   font-size: 14px;
   line-height: 1.71;
   color: var(--paragraph-color);
+  position: relative;
+}
+.inner-modal .form-button {
+  margin-left: 164px;
 }
 
 .form-button {
@@ -759,15 +782,38 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
-  margin-left: 12px;
-  justify-content: center;
-  align-items: center;
+}
+.form-agreement svg {
+  width: 11px;
+  height: 8px;
+  fill: var(--white-color);
+  position: absolute;
+  top: 2px;
+  right: 375px;
+}
+.form-span {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-left: 40px;
+  margin-right: 7px;
+  margin-top: 25px;
+  border: 1px solid var(--paragraph-color);
+}
+.form-span:hover {
+  color: var(--white-color);
+  background-color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+.checkbox {
+  display: none;
 }
 .subscribe {
   padding-top: 82px;
   margin-left: 93px;
 }
 .e-mail-icon {
+  fill: var(--white-color);
   height: 24px;
   width: 24px;
   position: absolute;
